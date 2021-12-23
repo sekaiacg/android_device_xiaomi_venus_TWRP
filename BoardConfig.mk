@@ -177,6 +177,7 @@ PLATFORM_VERSION := 11.0
 TW_HAS_EDL_MODE := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS :=true
 TW_LOAD_VENDOR_MODULES := "hwid.ko xiaomi_touch.ko fts_touch_spi.ko adsp_loader_dlkm.ko qti_battery_charger.ko exfat.ko"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone20/temp"
 
 #BOARD_AVB_BOOT_ADD_HASH_FOOTER_ARGS += \
 #--prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
