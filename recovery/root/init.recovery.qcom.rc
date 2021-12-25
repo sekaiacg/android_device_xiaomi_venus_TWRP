@@ -108,6 +108,7 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
     seclabel u:r:recovery:s0
 
 on boot
+    setprop sys.usb.config adb
     start vendor.qti.vibrator
 
 on property:twrp.modules.loaded=true
@@ -117,7 +118,6 @@ on property:twrp.modules.loaded=true
     wait /sys/class/power_supply/battery
     start health-hal-2-1
     umount /firmware
-    setprop sys.usb.config adb
 
 on property:crypto.ready=0
     stop vendor.qseecomd
