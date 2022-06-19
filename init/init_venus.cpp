@@ -85,8 +85,13 @@ void vendor_load_properties() {
     property_override("ro.bootimage.build.date.utc", "1609430400");
     property_override("ro.build.date.utc", "1609430400");
     const std::string twrp_name = GetProperty("ro.twrp.device.name", "");
+    const std::string sku = GetProperty("ro.boot.hardware.sku", "");
     if (twrp_name == "venus") {
       model_property_override("venus", "Mi 11");
+    } else if (sku == "star") {
+      model_property_override("star", "Mi 11 Ultra");
+    } else if (sku == "mars") {
+      model_property_override("mars", "Mi 11 Pro");
     } else {
       model_property_override("unknow", "unknow name");
     }

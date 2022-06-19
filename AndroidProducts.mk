@@ -15,6 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_venus.mk
+    $(LOCAL_DIR)/twrp_venus.mk \
+    $(LOCAL_DIR)/twrp_star.mk
 
 
