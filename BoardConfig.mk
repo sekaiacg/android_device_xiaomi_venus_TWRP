@@ -152,7 +152,7 @@ TW_INCLUDE_LIBRESETPROP := true
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 ifeq ($(TW_DEVICE_VERSION),)
-TW_DEVICE_VERSION=11.0
+TW_DEVICE_VERSION=12.0
 endif
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -173,8 +173,8 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
-PLATFORM_VERSION := 11
-PLATFORM_VERSION_LAST_STABLE := 11
+PLATFORM_VERSION := 12
+PLATFORM_VERSION_LAST_STABLE := 12
 TW_HAS_EDL_MODE := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS :=true
 TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko fts_touch_spi_k2.ko adsp_loader_dlkm.ko qti_battery_charger.ko qti_battery_charger_main_$(PRODUCT_RELEASE_NAME).ko exfat.ko"
