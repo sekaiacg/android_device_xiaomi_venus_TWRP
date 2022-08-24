@@ -182,6 +182,7 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS :=true
 TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko fts_touch_spi_k2.ko adsp_loader_dlkm.ko qti_battery_charger.ko qti_battery_charger_main.ko qti_battery_charger_main_$(PRODUCT_RELEASE_NAME).ko exfat.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone20/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 5
+TW_BACKUP_EXCLUSIONS := /data/fonts
 
 #BOARD_AVB_BOOT_ADD_HASH_FOOTER_ARGS += \
 #--prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
