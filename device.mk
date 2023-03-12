@@ -56,3 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += ro.twrp.device.name=$(PRODUCT_RELEASE_NAME)
 
 TWRP_REQUIRED_MODULES += miui_prebuilt \
     magisk_prebuilt
+
+ifneq ($(TW_SKKK_VER_CODE),)
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.version.skkk.code=$(TW_SKKK_VER_CODE)
+endif
