@@ -58,11 +58,9 @@ on fs
     install_keyring
 
 on init
-    start vendor.qseecomd
     start boot-hal-1-1
 
 on boot
-    start vendor.qti.vibrator
     setprop sys.usb.config adb
 
 on property:twrp.modules.loaded=true
@@ -70,6 +68,8 @@ on property:twrp.modules.loaded=true
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+    start vendor.qseecomd
+    start vendor.qti.vibrator
     start health-hal-2-1
     umount /firmware
 
@@ -99,4 +99,5 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
     class hal
     user system
     group system input
+    disabled
     seclabel u:r:recovery:s0
