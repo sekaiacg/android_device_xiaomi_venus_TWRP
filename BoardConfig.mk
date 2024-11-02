@@ -185,5 +185,5 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS :=true
 TW_LOAD_VENDOR_MODULES := "msm_drm.ko fts_touch_spi_k2.ko adsp_loader_dlkm.ko qti_battery_charger.ko qti_battery_charger_main.ko qti_battery_charger_main_$(PRODUCT_RELEASE_NAME).ko exfat.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone20/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
-TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_BACKUP_EXCLUSIONS := /data/fonts,/data/adb/ap,/data/adb/ksu
 TW_FRAMERATE := 60
